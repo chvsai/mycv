@@ -1,0 +1,17 @@
+
+
+
+
+# second request
+POST  http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "price" : 5000,
+    "make" : "Honda",
+    "model" : "Vertigo",
+    "year" : 2001,
+    "lat" : 0,
+    "lng" : 0,
+    "mileage" : 100
+}

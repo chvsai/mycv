@@ -6,7 +6,7 @@ describe('AuthService', () => {
     let service: AuthService;
     beforeEach(async () => {
         const fakeUserService = {
-            find: Promise.resolve([]),
+            find: () => Promise.resolve([]),
             create: (email:string,password:string) => 
                 Promise.resolve({id:1,email,password}),
             

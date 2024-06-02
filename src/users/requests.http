@@ -1,0 +1,19 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "abc@test.com",
+    "password": "abc123"
+}
+
+### signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+     "email": "abc@test.com",
+    "password": "abc123"
+}
+
+### logged in user
+GET http://localhost:3000/auth/whoami
